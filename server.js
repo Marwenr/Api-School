@@ -16,4 +16,7 @@ app.use((req,res,next) => {
 
 app.use('/',studentRoute)
 
-app.listen(4040)
+const PORT = process.env.PORT || 4040
+app.listen(PORT, () => {
+  console.log('server runing')
+})

@@ -6,7 +6,7 @@ const schemaStudent = mongoose.Schema({
   "age" : Number,
 })
 
-const url = "mongodb://localhost:27017/schoolapi"
+const url = "mongodb+srv://marwen:marwen@cluster0.maa5ozc.mongodb.net/?retryWrites=true&w=majority"
 const Student = mongoose.model("student", schemaStudent)
 
 exports.addStudent = (firstname,lastname,age) => {
